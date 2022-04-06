@@ -1,0 +1,146 @@
+*{margin: 0;box-sizing: content-box;}
+
+body{
+    display:grid;
+    grid-template-rows: 100px 150px auto auto;
+    background-size: 0 30%;
+    color: white;
+    margin: 0 30%;
+}
+
+
+.review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+
+    background-color: black;
+    font-family: "Futura Bk BT";
+}
+
+
+.stars{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+}
+.stars figure{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    
+}
+.stars figure svg{
+    height: 100px;
+    fill: white;
+    margin: 5px;
+    cursor: pointer;
+}
+.stars span{
+    margin-top: 10px;
+    font-family: "Myriad Pro",sans-serif;
+    font-size: 1rem;
+}
+
+
+.option{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    transition: 3000ms;
+}
+.option h3{
+    margin-top: 30px;
+    font-family: "Futura Bk BT";
+    font-size: 1.4rem;
+    font-weight: lighter;
+}
+.questions{
+    margin-top: 10px;
+    list-style: none;
+    text-decoration: none;
+}
+.questions span{
+    margin-right: 10px;
+    width: 6px;
+    padding: 5px;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.questions li{
+    display: flex;
+    padding: 20px 0px;
+    font-family: "Myriad Pro",sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
+
+
+.comment{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    background-color: black;
+    transition: 1000ms;
+}
+.optional{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Myriad Pro",sans-serif;
+    font-size: 1.0rem;
+}
+.comment h3{
+    font-size: 1.5rem;
+    font-family: "Futura Bk BT";
+    font-style: italic;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.comment textarea{
+    margin-top: 10px;
+    height: 80px;
+    width: 500px;
+}
+.comment button{
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    font-size: 1.4rem;
+    font-family: "Myriad Pro",sans-serif;
+    border: 2px solid yellow;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    margin-left: 350px;
+    cursor: pointer;
+
+}
+.background{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    background-color: black;
+    height: 750px;
+
+}
+
+@media (max-width: 1200px) {
+    body{margin: 0 15px;background-color: black;}
+    .questions span{width: 1px;padding: 10px;}
+}
+
+
+
